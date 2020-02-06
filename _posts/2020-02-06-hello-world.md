@@ -1,7 +1,6 @@
 ---
-title: Welcome
-tags: TeXt
-layout: article
+title: Hello, welcome to my blog 
+tags: welcome 
 ---
 
 Become a coding pro and create a development branch of your site. Each time you want to fix a bug or add a new feature you can create a copy of your master branch, make your changes, and then merge that branch to the master branch. The idea is to keep the master branch clean.
