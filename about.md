@@ -1,74 +1,24 @@
 ---
 layout: article
-titles:
-  # @start locale config
-  en      : &EN       About
-  en-GB   : *EN
-  en-US   : *EN
-  en-CA   : *EN
-  en-AU   : *EN
-  zh-Hans : &ZH_HANS  关于
-  zh      : *ZH_HANS
-  zh-CN   : *ZH_HANS
-  zh-SG   : *ZH_HANS
-  zh-Hant : &ZH_HANT  關於
-  zh-TW   : *ZH_HANT
-  zh-HK   : *ZH_HANT
-  ko      : &KO       소개
-  ko-KR   : *KO
-  fr      : &FR       À propos
-  fr-BE   : *FR
-  fr-CA   : *FR
-  fr-CH   : *FR
-  fr-FR   : *FR
-  fr-LU   : *FR
-  # @end locale config
 key: page-about
 ---
 
-![TeXt Theme](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/TeXt-home.jpg)
+网名 `@hulk`， 互联网后端研发工程师, 目前主要从事分布式 KV， 消息队列等基础服务研发。2012 年本科毕业加入新浪微博开放平台主要做应用开发(PHP)，
+2013 年转到新浪微博架构平台参与 KV 相关服务(`Redis`) 二次开发, 在 2015 年加入美图架构平台团队, 主要负责 KV, 队列等基础服务研发。
 
-TeXt is a super customizable Jekyll theme for personal site, team site, blog, project, documentation, etc. Similar to iOS 11 style, it has large and prominent titles, round buttons and cards.
+### 主导开源项目
 
-```javascript
-(() => console.log('Hello, World!'))();
-```
+* [git-hulk/tcpkit - 支持 Lua 解析的抓包工具](https://github.com/git-hulk/tcpkit) 
+* [meitu/lmsfty - 基于 Redis 实现的任务队列](https://github.com/meitu/lmstfy)
+* [meitu/kvrocks - 兼容 Redis 协议的 SSD KV 存储](https://github.com/meitu/kvrocks)
+* [meitu/twemproxy - 多进程的 twemproxy 实现](https://github.com/meitu/twemproxy)
+* [meitu/go-consumergroup - Golang 版本的 Kafaka Consumer Group](https://github.com/meitu/go-consumergroup)
+* [meitu/php-consumergroup - PHP 版本的 Kafaka Consumer Group](https://github.com/meitu/php-consumergroup)
+* [meitu/go-ethereum - Ethereum 的 DPoS 实现](https://github.com/meitu/go-ethereum)
 
-## Features
+### 公众号投稿文章
 
-- Responsive
-- Semantic HTML
-- Skins
-- Highlight Theme
-- Internationalization
-- Search
-- Table of contents
-- Authors
-- Additional styles (alert, tag, image, icon, button, grid, etc)
-- Extensions (audios, videos, slides, demos)
-- Markdown enhancements ([MathJax](https://www.mathjax.org/), [mermaid](https://mermaidjs.github.io/), [chartjs](http://www.chartjs.org/))
-- Sharing ([AddToAny](https://www.addtoany.com/), [AddThis](https://www.addthis.com/))
-- Comments ([Disqus](https://disqus.com/), [Gitalk](https://gitalk.github.io/), [Valine](https://valine.js.org/en/))
-- Pageview ([LeanCloud](https://leancloud.cn/))
-- Analytics ([Google Analytics](https://analytics.google.com/analytics/web/))
-- RSS ([jekyll-feed](https://github.com/jekyll/jekyll-feed))
-
-## Skins
-
-TeXt has 6 built-in skins, you can also set up your own skin.
-
-| `default` | `dark` | `forest` |
-| --- |  --- | --- |
-| ![Default](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_default.jpg) | ![Dark](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_dark.jpg) | ![Forest](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_forest.jpg) |
-
-| `ocean` | `chocolate` | `orange` |
-| --- |  --- | --- |
-| ![Ocean](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_ocean.jpg) | ![Chocolate](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_chocolate.jpg) | ![Orange](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_orange.jpg) |
-
-### Highlight Theme
-
-TeXt use [Tomorrow](https://github.com/chriskempson/tomorrow-theme) as the highlight theme.
-
-| `tomorrow` | `tomorrow-night` | `tomorrow-night-eighties` | `tomorrow-night-blue` | `tomorrow-night-bright` |
-| --- |  --- | --- | --- |  --- |
-| ![Tomorrow](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow.png) | ![Tomorrow Night](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow-night.png) | ![Tomorrow Night Eighties](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow-night-eighties.png) | ![Tomorrow Night Blue](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow-night-blue.png) | ![Tomorrow Night Bright](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow-night-bright.png) |
+* [正式支持多线程！Redis 6.0与老版性能对比评测](https://mp.weixin.qq.com/s/6WQNq5dNk-GuEhZXtVCo-A)
+* [千万级延时任务队列如何实现，看美图开源的-LMSTFY](https://mp.weixin.qq.com/s/79z5LQ5EE9pu3r7Qz5UrBg)
+* [Memcache/Redis集群管理探索与实现：美图开源PaaS平台资源网关](https://mp.weixin.qq.com/s/HSuzeS2BBf-pLexZOr8c8A)
+* [美图技术团队发布开源 Ethereum DPoS 实现](https://mp.weixin.qq.com/s/9REPJspsdKaMnpw79pbsyg)
