@@ -118,20 +118,20 @@ sharing:
 ## => Comments
 ##############################
 comments:
-  provider: "disqus" # false (default), "disqus", "gitalk", "valine", "custom"
+  provider: gitalk # false (default), "disqus", "gitalk", "valine", "custom"
 
   ## Disqus
   disqus:
-      shortname: "git-hulk" # the Disqus shortname for the site
+      shortname: # the Disqus shortname for the site
 
   ## Gitalk
   # please refer to https://github.com/gitalk/gitalk for more info.
   gitalk:
-    clientID    : # GitHub Application Client ID
-    clientSecret: # GitHub Application Client Secret
-    repository  : # GitHub repo
-    owner       : # GitHub repo owner
-    admin: # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
+    clientID    : 844350c472c8126a7eb3 # GitHub Application Client ID
+    clientSecret: 8b4701039f49eec05ea8d1585e433a255485366e # GitHub Application Client Secret
+    repository  : git-hulk.github.io  # GitHub repo
+    owner       : git-hulk # GitHub repo owner
+    admin: git-hulk # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
       # - your GitHub Id
 
   ## Valine
