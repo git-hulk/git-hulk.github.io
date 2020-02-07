@@ -2,6 +2,7 @@
 layout: article
 title: oom killer 实现 
 key: posts-how-oom-killer-works
+tags: linux mmeory
 ---
 作为一个不合格的开发人员多多少少都被 OOM(Out of memory) x 过，只是一般大家对于为什么被选中，可能没太考究。
 

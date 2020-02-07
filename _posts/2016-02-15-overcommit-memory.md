@@ -2,6 +2,7 @@
 layout: article
 title: 谈谈 overcommit memory
 key: posts-overcommit-memory
+tags: linux memory
 ---
 
 

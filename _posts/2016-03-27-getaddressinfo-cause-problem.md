@@ -2,6 +2,7 @@
 layout: article
 title: getaddressinfo 引发的血案 
 key: posts-getaddressinfo-cause-unbalance
+tags: linux glibc
 ---
 
 DBA 发现同一组 Redis 从库中有实例 QPS 比较高，对比发现只是其中一个从库偏高而其他从库是正常的，分布如下:
