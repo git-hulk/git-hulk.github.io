@@ -1,8 +1,11 @@
-不要问我为何眼中常含着泪水，因为我是代码狗。。
+---
+layout: article
+title: 谈谈 overcommit memory
+key: posts-overcommit-memory
+---
 
-### 1) 缘起
 
-春节前几天本是开始吃着火锅唱着歌的时候。运维大侠说要扩容 Redis 从库，扩容本来就是家常便饭，x 了狗的是同步一直无法成功。看日志发现在做 bgsave 的时候一直失败。 日志如下:
+春节前几天运维大侠说要扩容 Redis 从库但同步一直失败，看日志发现在做 bgsave 的时候一直失败。 日志如下:
 
 ```shell
 [41738] 04 Feb 11:16:39.859 * Full resync requested by slave.
@@ -11,9 +14,9 @@
 [41738] 04 Feb 11:16:39.860 * Replication failed, can't BGSAVE
 ```
 
-从日志来看原因也比较清楚，就是 bgsave 在做 fork 的时候内存分配失败，应该就是可用内存不足吧。
+从日志可以看到 fork 的时候内存分配失败导致 bgsave 无法成功，那就是可用内存不足?
 
-使用 `info memory` 看了一下实例使用内存， 差不多用了 8G:
+使用 `info memory` 看了一下实例使用内存， 差不多用了 `8G`:
 
 ```shell
 used_memory:8045067888
@@ -23,9 +26,9 @@ used_memory_peak:50615269608
 used_memory_peak_human:47.14G
 ```
 
-然后用 `free -m` 看到系统空闲页加上 pagecache 也有 21G，这个空闲内存远大于实例使用的 8G 呀，为什么会 fork 失败呢？ 你妈炸了。
+然后用 `free -m` 看到系统空闲页加上 pagecache 也有 21G，这个空闲内存远大于实例使用的 8G 呀，为什么会 fork 失败呢？
 
-使用 `top` 发现虚拟内存使用了 48.7G, 常驻内存使用是 7.6G。
+使用 `top` 发现这个 Redis 实例虚拟内存使用了 48.7G, 常驻内存使用是 7.6G。
 
 ![img](/images/overcommit-memory-top.jpeg)
 
@@ -156,4 +159,4 @@ error:
 
 ### 5） END
 
-调整系统参数还是需要谨慎再谨慎，在没有详细查看官方文档以及全面了解参数对系统的影响的时候，切勿手贱随意调整。。。
+调整系统参数还是需要谨慎再谨慎，在没有详细查看官方文档以及全面了解参数对系统的影响的时候，切勿手贱随意调整。
