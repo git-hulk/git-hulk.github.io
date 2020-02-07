@@ -7,7 +7,7 @@ tags: linux glibc
 
 DBA 发现同一组 Redis 从库中有实例 QPS 比较高，对比发现只是其中一个从库偏高而其他从库是正常的，分布如下:
 
-![image](/images/getaddressinfo-redis-unbalance.jpeg)
+![image](https://cdn.jsdelivr.net/gh/git-hulk/git-hulk.github.io/images/getaddressinfo-redis-unbalance.jpeg)
 
 那么问题就是: 「为什么会 QPS 不均匀?」, 由于我们先上 php 业务都是长连接，QPS 不均匀应该是连接数不均带来的。然后让运维大侠统计了一下四个实例的连接数，发现确实请求量跟连接数是成线性正相关的。
 
@@ -139,7 +139,7 @@ root$ echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6
 
 过了一会，多个 Redis 访问量和连接数终于恢复均匀，问题初步解决。
 
-![image](/images/getaddressinfo-redis-unbalance.jpeg)
+![image](https://cdn.jsdelivr.net/gh/git-hulk/git-hulk.github.io/images/getaddressinfo-redis-balance.jpeg)
 
 
 ### 7）END 

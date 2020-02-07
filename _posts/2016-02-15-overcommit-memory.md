@@ -31,7 +31,7 @@ used_memory_peak_human:47.14G
 
 使用 `top` 发现这个 Redis 实例虚拟内存使用了 48.7G, 常驻内存使用是 7.6G。
 
-![img](/images/overcommit-memory-top.jpeg)
+![img](https://cdn.jsdelivr.net/gh/git-hulk/git-hulk.github.io/images/overcommit-memory-top.jpeg)
 
 ### 2) 那么问题来了
 
