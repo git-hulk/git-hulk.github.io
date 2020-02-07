@@ -3,10 +3,6 @@ layout: article
 title: php 如何检查 TCP 连接是否关闭
 key: posts-how-php-check-tcp-liveness
 ---
-长连接可以减少建立连接的过程, 使用长连接可以提高服务的性能。php 很多扩展都支持长连接，如 redis, memcache, mysql 的主流扩展都支持。我们知道长连接就是一次建立连接，使用之后不会马上释放，而是把这个连接放到连接池。那么引发的一个问题就是，我们下次使用时如何知道这个连接是否已经被关闭。
-<!--more-->
-
----
 
 长连接可以减少建立连接的过程, 使用长连接可以提高服务的性能。php 很多扩展都支持长连接，如 redis, memcache, mysql 的主流扩展都支持。
 
