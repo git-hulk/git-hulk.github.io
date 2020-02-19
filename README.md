@@ -1,1 +1,1 @@
-hulk develop blog, see: [www.hulkdev.com](http://www.hulkdev.com)
+hulk develop blog, website: [www.hulkdev.com](http://www.hulkdev.com)
