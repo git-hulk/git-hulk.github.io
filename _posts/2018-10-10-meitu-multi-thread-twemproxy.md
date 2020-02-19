@@ -139,7 +139,7 @@ nc_set_reuseport(int sd)
 * 内存 64G
 * 两张千兆网卡做 bond0
 
-![img](https://cdn.jsdelivr.net/gh/git-hulk/git-hulk.github.io/images/twmeproxy-benchmark.webp)
+![img](https://cdn.jsdelivr.net/gh/git-hulk/git-hulk.github.io/images/twemproxy-benchmark.webp)
 
 单个 worker 场景和 twemproxy 改造之前的性能差不多，在 10w 左右。随着 worker 数目增加，后面性能和 worker 基本是保持线上增长，符合预期。8 核以上的瓶颈是 bond0 模式下包接收不均匀导致单网卡性能达到瓶颈，数据无法作为参考。上面的数据也是我们自己环境的压测数据，大家可以自行验证。如果是多网卡需要注意绑定中断或者多队列到多个 CPU, 避免 CPU0 软中断处理成为瓶颈。
 
