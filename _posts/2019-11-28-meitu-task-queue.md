@@ -2,7 +2,7 @@
 layout: article
 title: 美图开源任务队列 - LMSTFY 
 key: posts-meitu-opensource-task-queue
-tags: LMSTFY Redis
+tags: LMSTFY Queue Redis
 ---
 
 lmstfy(Let Me Schedule Task For You) 是美图架构基础服务团队在 2018 年初基于 Redis 实现的简单任务队列(Task Queue)服务，目前在美图多个线上产品使用接近两年的时间。主要提供以下特性:
