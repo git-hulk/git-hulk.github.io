@@ -169,12 +169,12 @@ search:
 ## => Analytics
 ##############################
 analytics:
-  provider: google # false (default), "google", "custom"
+  provider: false # false (default), "google", "custom"
 
   ## Google Analytics
   google:
-    tracking_id : UA-157940045-1
-    anonymize_ip: false # Anonymize IP tracking for Analytics
+      # tracking_id : UA-157940045-1
+      # anonymize_ip: false # Anonymize IP tracking for Analytics
 
 
 ## => Build
