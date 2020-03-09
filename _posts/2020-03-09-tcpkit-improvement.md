@@ -6,7 +6,7 @@ tags: TCPKIT TCP
 ---
 
 
-`tcpkit` 是支持用 lua 脚本分析网络数据包的工具，附带简单协议解析(Redis/Memcached)和延时统计。最早开发 `tcpkit` 主要原因是经常需要通过网络包来分析资源慢请求问题，在数据包量比较大的场景下人肉分析会浪费比较时间，所以希望可以通过编码的方式来分析这类问题。`tcpkit` 从开发至今已经帮助我们团队以及美图 DBA 定位无数的线上问题，之前甚至通过 `tcpkit` 找到了 BCM 网卡驱动到 kernel 偶发产生几百毫秒延时问题。
+`tcpkit` 是支持用 lua 脚本分析网络数据包的工具，附带简单协议解析(Redis/Memcached)和延时统计。最早开发 `tcpkit` 主要原因是经常需要通过网络包来分析资源慢请求问题，在数据包量比较大的场景下人肉分析会浪费比较时间，所以希望可以通过编码的方式来分析这类问题。从开发至今已经帮助我们团队以及美图 DBA 定位无数的线上问题，之前甚至通过 `tcpkit` 找到了 BCM 网卡驱动到 kernel 偶发产生几百毫秒延时问题。
 
 Github 地址: [https://github.com/git-hulk/tcpkit](https://github.com/git-hulk/tcpkit)
 
