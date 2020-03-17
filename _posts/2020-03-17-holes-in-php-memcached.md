@@ -7,7 +7,7 @@ tags: tcp linux php memcached
 
 
 
-之前美图 PHP 业务团队在使用 php-memcached 扩展陆陆续续遇到一些隐蔽的 ”坑”，而这些坑在 php-memcached 是极其容易踩到。其中有如 `TCP_NODELAY` 和 `TCP Delay ACK` 这类常见的坑，也有一些 php-memcached 本身设计带来的问题，这里分享出来希望可以有遇到类似问题或者正在坑里的同学带来一些帮助。
+美图 PHP 业务团队在使用 php-memcached 扩展陆陆续续遇到一些隐蔽的 ”坑”，而这些坑在 php-memcached 也是比较容易踩到。其中有如 `TCP_NODELAY` 这类常见的坑，也有一些 php-memcached 本身设计带来的问题。这里分享出来希望可以给遇到类似问题或者正在坑里的同学带来一些帮助。
 
 ### 1.  TCP_NODELAY 导致 40ms 延时
 
@@ -76,9 +76,9 @@ static void tcp_event_data_recv(struct sock *sk, struct sk_buff *skb) {
 }
 ```
 
-TCP 协议栈在第一个数据包到来时不触发 delay ACK 机制的主要原因是因为，TCP 在刚建立完连接之后会进入 `slow start` 阶段，slow start 允许发送未 ACK 的窗口大小取决于之前的 ACK 数量，所以为了避免 slow start 阶段过慢，第一个数据包不触发 delay ack 逻辑。
+TCP 协议栈在第一个数据包到来时不触发 delay ACK 机制的主要原因是因为，TCP 在刚建立完连接之后会进入 `slow start` 阶段，`slow start` 允许发送未 ACK 的窗口大小取决于之前的 ACK 数量，所以为了避免 slow start 阶段过慢，第一个数据包不触发 delay ack 逻辑。
 
-问题修复也比较简单，如果开启二进制协议的时候，需要手动把 TCP_NODELAY 也开起来。
+> 问题修复也比较简单，如果开启二进制协议的时候，需要手动把 `TCP_NODELAY` 也开起来。
 
 ### 2. 不合理的默认重试策略
 
