@@ -35,3 +35,27 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
 }
+
+@media screen and (min-width: 997px) {
+  :root {
+    --ifm-font-size-base: 16px;
+  }
+  article header h1 {
+    font-size: 28px !important;
+  }
+  article header h2 {
+    font-size: 24px !important;
+  }
+  article header h3 {
+    font-size: 20px !important;
+  }
+  .markdown h1 {
+    font-size: 28px !important;
+  }
+  .markdown h2 {
+    font-size: 24px !important;
+  }
+  .markdown h3 {
+    font-size: 20px !important;
+  }
+}
