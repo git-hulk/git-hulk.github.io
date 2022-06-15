@@ -42,7 +42,7 @@
 
 @media screen and (min-width: 997px) {
   :root {
-    --ifm-font-size-base: 16px;
+    --ifm-font-size-base: 17px;
   }
   article header h1 {
     font-size: 28px !important;
