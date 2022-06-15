@@ -23,6 +23,10 @@
   --ifm-color-primary-lighter: #359962;
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
+  --ifm-line-height-base: 2; /* Instead of 1.5 */
+  --ifm-leading-desktop: 1.25; /* Instead of 1.5 */
+  --ifm-list-margin: var(--ifm-leading); /* Keep consistent with the leading */
+  --ifm-font-family-base: Optima-Regular, Optima, PingFangSC-light, PingFangTC-light, "PingFang SC", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
