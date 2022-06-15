@@ -25,6 +25,7 @@ jobs:
         run: |
           npm install 
           npm run build
+          cp CNAME build
       - name: Deploy to GitHub Pages
         if: success()
         uses: crazy-max/ghaction-github-pages@v2
