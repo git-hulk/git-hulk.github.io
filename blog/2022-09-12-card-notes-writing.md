@@ -29,4 +29,4 @@ tags: [读书]
 
 欢迎扫码关注 **hulk** 个人微信公众号，一起学习和交流:
 
-![img](https://cdn.jsdelivr.net/gh/git-hulk/git-hulk.github.io/images/person-qrcode.jpeg)
+![img](https://cdn.jsdelivr.net/gh/git-hulk/git-hulk.github.io/images/personal-qrcode.jpeg)
