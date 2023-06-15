@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[1833],{5964:function(s){s.exports=JSON.parse('{"label":"SSD","permalink":"/tags/ssd","allTagsPath":"/tags","count":1}')}}]);

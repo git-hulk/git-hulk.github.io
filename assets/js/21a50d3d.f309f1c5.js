@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[9012],{4209:function(e){e.exports=JSON.parse('{"label":"LMSTFY","permalink":"/tags/lmstfy","allTagsPath":"/tags","count":1}')}}]);

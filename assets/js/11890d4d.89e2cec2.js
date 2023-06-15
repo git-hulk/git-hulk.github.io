@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[2490],{3495:function(e){e.exports=JSON.parse('{"label":"Uptrace","permalink":"/tags/uptrace","allTagsPath":"/tags","count":1}')}}]);

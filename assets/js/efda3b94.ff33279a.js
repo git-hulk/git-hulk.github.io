@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[5612],{5806:function(e){e.exports=JSON.parse('{"label":"memcached","permalink":"/tags/memcached","allTagsPath":"/tags","count":2}')}}]);
